@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+:where(img, picture, video, canvas, svg) {
+  display: block;
+  max-width: 100%;
+}
+
+:where(input, button, textarea, select) {
+  font: inherit;
+}
+
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+.btn-wrapper {
+  /* flexbox */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.btn {
+  color: #000;
+  background-color: #f3f2f2cc;
+  border: 2px solid #cecece;
+  padding: 0.35rem 1rem 0.25rem 1rem;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #ecf2fd;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #d1e0fe;
+}
+
+.btn:focus {
+  outline: none;
+  border: black solid 2px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #101010;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.3rem;
+  border: black solid 2px;
+  margin: 1rem 0;
+}
+
+.btn-primary:hover {
+  background-color: #444242;
+  cursor: pointer;
+}
+
+.btn-primary:focus {
+  color: #000;
+  outline: none;
+  border: #000 solid 2px;
+  background-color: #d7ecff;
+}
+
+.btn-primary:active {
+  background-color: #212020;
+}
